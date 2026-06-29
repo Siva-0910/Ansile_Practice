@@ -3,25 +3,35 @@
   connection: local
   vars:
     time: two
-  vars_prompt:    
-    - name: prompt
-      prompt: "please enter your name"
-      private: false  
+    course: devops
+    duration: 120hr
+    tools:
+    - linux
+    - ansible
+    - shell
+  # vars_prompt:    
+  #   - name: prompt
+  #     prompt: "please enter your name"
+  #     private: false 
   
   tasks:
-  - name: Daily Practice
+  # - name: Daily Practice
+  #   ansible.builtin.debug:
+  #     msg: "{{ time }} hour maximum"
+  # - name: install nginx
+  #   ansible.builtin.package:
+  #     name: nginx
+  #     state: present
+  # - name: Start nginx
+  #   ansible.builtin.service:
+  #     name: nginx
+  #     state: started    
+  #     enabled: yes
+  # - name: print prompt details
+  #   ansible.builtin.debug:
+  #     msg: "{{ prompt }}"
+  - name: print vars details
     ansible.builtin.debug:
-      msg: "{{ time }} hour maximum"
-  - name: install nginx
-    ansible.builtin.package:
-      name: nginx
-      state: present
-  - name: Start nginx
-    ansible.builtin.service:
-      name: nginx
-      state: started    
-      enabled: yes
-  - name: print prompt details
-    ansible.builtin.debug:
-      msg: "{{ prompt }}"
+      msg: "Hi I am learinig {{ course }} tainer is {{ trainer }} duration {{ duration }} adnd tools are {{ Tools }}
+
         
