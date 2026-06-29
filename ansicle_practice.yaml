@@ -1,7 +1,9 @@
 - name: Practice makes man perfect
   hosts: local
   connection: local
+  vars:
+    time: one
   tasks:
   - name: Daily Practice
     ansible.builtin.debug:
-      msg: "One hour maimum"
+      msg: "{{ time }} hour maimum"
