@@ -2,8 +2,12 @@
   hosts: local
   connection: local
   vars:
-    time: one
+    time: two
   tasks:
   - name: Daily Practice
     ansible.builtin.debug:
-      msg: "{{ time }} hour maimum"
+      msg: "{{ time }} hour maximum"
+  - name: Install nginx
+    ansible.builtin.package:
+    - name: nginx
+      state: present    
