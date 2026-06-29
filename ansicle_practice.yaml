@@ -22,6 +22,6 @@
       state: started    
       enabled: yes
   - name: print prompt details
-      ansible.builtin.debug:
-        msg: "{{ vars_prompt }}"
+    ansible.builtin.debug:
+      msg: "{{ vars_prompt }}"
         
