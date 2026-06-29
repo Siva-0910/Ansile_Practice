@@ -1,0 +1,7 @@
+- name: Practice makes man perfect
+  hosts: local
+  connection: local
+  tasks:
+  - name: Daily Practice
+    ansible.builti.debug:
+      msg: "One hour maimum"
