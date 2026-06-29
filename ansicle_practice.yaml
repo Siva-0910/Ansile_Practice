@@ -23,5 +23,5 @@
       enabled: yes
   - name: print prompt details
     ansible.builtin.debug:
-      msg: {{ prompt }}
+      msg: "{{ prompt }}"
         
