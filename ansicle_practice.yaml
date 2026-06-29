@@ -3,7 +3,7 @@
   connection: local
   vars:
     time: two
-  vars_prompt:
+  
   tasks:
   - name: Daily Practice
     ansible.builtin.debug:
@@ -17,9 +17,12 @@
       name: nginx
       state: started    
       enabled: yes
-  - name: prompt
-    ansible.builtin.debug:
-      msg: "please enter your name"    
-  - name: print name
-    ansible.builtin.debug:
-      msg: "{{ prompt }}"  
+  vars_prompt:    
+    - name: vars_prompt
+      prompt: "please enter your name"
+      private: false
+    
+    - name: print prompt details
+      ansible.builtin.debug:
+        msg: "{{ vars_prompt }}"
+        
