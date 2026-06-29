@@ -3,5 +3,5 @@
   connection: local
   tasks:
   - name: Daily Practice
-    ansible.builti.debug:
+    ansible.builtin.debug:
       msg: "One hour maimum"
