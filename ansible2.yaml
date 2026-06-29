@@ -1,0 +1,10 @@
+- name: Start real thigs
+  hosts: local
+  connection: local
+  vars:
+    number: 65
+  tasks:
+  - name: conditions
+    ansible.builtin.debug:
+      msg: "{{ number }} is greater that 100"
+      when number > 100
