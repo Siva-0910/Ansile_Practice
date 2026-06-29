@@ -4,9 +4,9 @@
   vars:
     time: two
   tasks:
-  - name: Daily Practice
-    ansible.builtin.debug:
-      msg: "{{ time }} hour maximum"
+  # - name: Daily Practice
+  #   ansible.builtin.debug:
+  #     msg: "{{ time }} hour maximum"
   - name: Install nginx
     ansible.builtin.package:
     - name: nginx
