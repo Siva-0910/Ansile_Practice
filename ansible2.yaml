@@ -7,4 +7,4 @@
   - name: conditions
     ansible.builtin.debug:
       msg: "{{ number }} is greater that 100"
-      when: number > 100:
+      when: number > 100
