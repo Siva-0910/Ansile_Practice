@@ -32,6 +32,6 @@
   #     msg: "{{ prompt }}"
   - name: print vars details
     ansible.builtin.debug:
-      msg: "Hi I am learinig {{ course }} tainer is {{ trainer }} duration {{ duration }} adnd tools are {{ Tools }}
+      msg: "Hi I am learinig '{{ course }}' tainer is '{{ trainer }}' duration '{{ duration }}' adnd tools are '{{ Tools }}'
 
         
