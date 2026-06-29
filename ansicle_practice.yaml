@@ -7,7 +7,7 @@
   # - name: Daily Practice
   #   ansible.builtin.debug:
   #     msg: "{{ time }} hour maximum"
-  - name: Install nginx
+  - name: install nginx
     ansible.builtin.package:
     - name: nginx
       state: present   
